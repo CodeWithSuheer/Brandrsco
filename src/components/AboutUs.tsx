@@ -25,7 +25,7 @@ const AboutUs = () => {
                 <p className="mb-6 max-w-md">
                   Our mission is to simplify the process of building a
                   successful brand by offering expert guidance and tailored
-                  solutions. Whether you're just starting out or looking to take
+                  solutions. Whether you&apos;re just starting out or looking to take
                   your existing business to the next level, The Brandrs Co. is
                   here to provide the tools, knowledge, and support you need to
                   thrive in the competitive marketplace.

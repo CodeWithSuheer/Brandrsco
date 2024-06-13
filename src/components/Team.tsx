@@ -106,7 +106,7 @@ const Team = () => {
             <p className="mt-6">
               Meet the creative geniuses behind BrandrsCo. Our team transforms
               visions into reality, bringing passion and precision to every
-              brand we build. We don't just create brands; we bring dreams to
+              brand we build. We don&apos;t just create brands; we bring dreams to
               life.
             </p>
           </div>

@@ -153,7 +153,7 @@ const Projects = () => {
                         </h1>
                         <p className="text-gray-200">
                           We leverage the latest technology to ensure your
-                          brand's success in the digital world.
+                          brand&apos;s success in the digital world.
                         </p>
                       </div>
                     </div>

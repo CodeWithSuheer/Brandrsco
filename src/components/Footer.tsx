@@ -35,8 +35,13 @@ const Footer = () => {
           />
         </div>
         <div className=" pt-16 pb-6 flex flex-col items-center text-center">
-          <Link href="/">
-            <img alt="" className="w-auto h-28" src="/download.png" />
+          <Link href="/" className="relative h-28 w-28">
+            <Image
+              alt="logo"
+              className="object-contain"
+              fill
+              src="/download.png"
+            />
           </Link>
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             {navigation.map((data, index) => (

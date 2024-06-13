@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <p className="mb-6 max-w-md sm:max-w-xl xl:max-w-md">
                   Welcome to The Brandrs Co., where we empower young
                   entrepreneurs and aspiring brand owners to bring their visions
-                  to life. Whether you're looking to launch a private label, a
+                  to life. Whether you&apos;re looking to launch a private label, a
                   unique product, or an e-commerce store, The Brandrs Co. is
                   your one-stop shop for all your branding needs.
                 </p>
