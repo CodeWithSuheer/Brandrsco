@@ -43,7 +43,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg_navbar fixed pt-0 top-0 sm:top-5 h-20 my-auto max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto flex items-center">
+      <nav
+        className={`bg_navbar fixed pt-0 top-0 sm:top-5 h-20 ${
+          responsiveMenu ? "" : "px-3"
+        } sm:px-0 my-auto max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto flex items-center`}
+      >
         <div className="sm:flex sm:items-center justify-center sm:justify-between w-full px-0 max-w-full mx-auto md:px-1 lg:px-16">
           <div className="flex items-center justify-between md:block">
             <Link href="#home">
@@ -99,7 +103,7 @@ const Navbar = () => {
             {responsiveMenu && (
               <button
                 onClick={handleLinkClick}
-                className="text-white pr-4 flex justify-end w-full items-center"
+                className="text-white pr-5 pt-10 flex justify-end w-full items-center"
               >
                 <p className="pt-4">
                   <svg
