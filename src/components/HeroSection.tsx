@@ -37,7 +37,7 @@ const HeroSection = () => {
                 height={550}
                 src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Group_81.png?v=1717510886"
                 alt="main_banner_img"
-                className="object-cover"
+                className="object-cover pb-20"
               />
             </div>
           </div>
