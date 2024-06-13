@@ -116,11 +116,14 @@ const Team = () => {
                 {data.map((data) => (
                   <div key={data.id} className="member group">
                     <div className="dark-brown w-[15rem] h-[15rem] mx-auto flex justify-center items-center rounded-full bg-[#CCBB9E] p-7 cursor-pointer">
-                      <img
-                        src={data.image}
-                        className="rounded-full overflow-hidden"
-                        alt="team images"
-                      />
+                      <div className="relative w-[12rem] h-[12rem]">
+                        <Image
+                          fill
+                          src={data.image}
+                          className="rounded-full object-cover"
+                          alt="team images"
+                        />
+                      </div>
                     </div>
 
                     <div className="detail group-hover:block mt-3 text-center">

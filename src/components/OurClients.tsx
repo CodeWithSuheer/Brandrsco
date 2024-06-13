@@ -140,11 +140,8 @@ const OurClients = () => {
             <div className="mt-8 sm:mt-12">
               <Slider ref={sliderRef} {...settings}>
                 {data.map((data) => (
-                  <div className="mt-10 px-2 sm:px-2 lg:px-4">
-                    <div
-                      key={data?.id}
-                      className="bg-[#dfc27b] h-60 overflow-visible relative cursor-pointer rounded-2xl flex items-center text-black py-8 px-4 sm:px-8"
-                    >
+                  <div key={data?.id} className="mt-10 px-2 sm:px-2 lg:px-4">
+                    <div className="bg-[#dfc27b] h-60 overflow-visible relative cursor-pointer rounded-2xl flex items-center text-black py-8 px-4 sm:px-8">
                       {/* HAT */}
                       <div className="hat absolute -top-10 -right-1">
                         <Image

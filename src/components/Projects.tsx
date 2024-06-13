@@ -90,12 +90,14 @@ const Projects = () => {
               <div className="mt-5">
                 <Slider ref={sliderRef} {...settings}>
                   {data.map((data) => (
-                    <img
-                      key={data?.id}
-                      className="cursor-pointer"
-                      src={data?.image}
-                      alt={data?.alt}
-                    />
+                    <div key={data?.id} className="relative aspect-[400/300]">
+                      <Image
+                        fill
+                        className="cursor-pointer"
+                        src={data?.image}
+                        alt={data?.alt}
+                      />
+                    </div>
                   ))}
                 </Slider>
               </div>
@@ -118,11 +120,14 @@ const Projects = () => {
                   {/* content */}
                   <div className="mt-8 w-full flex flex-col gap-9">
                     <div className="w-full flex flex-col gap-4 sm:flex-row sm:items-center">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_97.png?v=1718121169"
-                        alt="Logo"
-                        className="size-11"
-                      />
+                      <div className="relative h-14 w-14">
+                        <Image
+                          fill
+                          src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_97.png?v=1718121169"
+                          alt="Logo"
+                          className="object-contain"
+                        />
+                      </div>
                       <div className="flex flex-col gap-2">
                         <h1 className="text-white font-semibold text-xl">
                           COMPETENT DEVELOPERS
@@ -134,11 +139,14 @@ const Projects = () => {
                       </div>
                     </div>
                     <div className="w-full flex flex-col gap-4 sm:flex-row sm:items-center">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_98.png?v=1718121399"
-                        alt="Logo"
-                        className="size-11"
-                      />
+                      <div className="relative h-14 w-14">
+                        <Image
+                          fill
+                          src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_98.png?v=1718121399"
+                          alt="Logo"
+                          className="object-contain"
+                        />
+                      </div>
                       <div className="flex flex-col gap-2">
                         <h1 className="text-white font-semibold text-xl">
                           STATE OF THE ART TECHNOLOGY
@@ -150,11 +158,14 @@ const Projects = () => {
                       </div>
                     </div>
                     <div className="w-full flex flex-col gap-4 sm:flex-row sm:items-center">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_99.png?v=1718121399"
-                        alt="Logo"
-                        className="size-11"
-                      />
+                      <div className="relative h-14 w-14">
+                        <Image
+                          fill
+                          src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group_99.png?v=1718121399"
+                          alt="Logo"
+                          className="object-contain"
+                        />
+                      </div>
                       <div className="flex flex-col gap-2">
                         <h1 className="text-white font-semibold text-xl">
                           EXCELLENT CUSTOMER SERVICE
@@ -168,12 +179,15 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full  flex flex-row gap-4 sm:w-[45%]">
-                <img
-                  className="px-14"
-                  src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Group_107.png?v=1717529004"
-                  alt=""
-                />
+              <div className="w-full flex flex-row gap-4 sm:w-[45%] justify-center">
+                <div className="relative h-[25rem] w-[25rem]">
+                  <Image
+                    fill
+                    className="px-0 object-contain"
+                    src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Group_107.png?v=1717529004"
+                    alt="image"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import "./Components.css";
 import { useState } from "react";
 import { Check } from "phosphor-react";
 import { Button, Modal } from "keep-react";
+import Image from "next/image";
 
 const data = [
   {
@@ -80,12 +81,15 @@ const Services = () => {
                   key={service.id}
                   className="bg_service_box flex justify-center items-center h-[22rem] w-[17rem] mt-2"
                 >
-                  <div className="content text-center">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Vector_4.png?v=1718129867"
-                      alt="service image"
-                      className="object-cover mx-auto w-full px-7"
-                    />
+                  <div className=" content text-center ">
+                    <div className="relative aspect-[200/100]">
+                      <Image
+                        fill
+                        src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Vector_4.png?v=1718129867"
+                        alt="service image"
+                        className="object-contain mx-auto w-full px-7"
+                      />
+                    </div>
                     <h2 className="mt-4 px-4 text-md font-bold">
                       {service.title}
                     </h2>
@@ -110,8 +114,9 @@ const Services = () => {
 
       <Modal isOpen={isOpen} onClose={closeModal}>
         <Modal.Body className="bg-[#EEE3C4] flex w-[40rem] flex-col items-center p-6 lg:p-8">
-          <Modal.Icon className="h-24 w-24 bg-transparent">
-            <img
+          <Modal.Icon className="relative h-24 w-24 bg-transparent">
+            <Image
+              fill
               src="https://cdn.shopify.com/s/files/1/0852/5099/8550/files/Group.png?v=1718119221"
               alt="hat"
             />
